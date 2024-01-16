@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+      <nav id="desktop-nav"> 
+        <div class="logo">Rahil Verma</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Rahil Verma</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <!-- circular picture -->
+          <img src="./assets/profile-pic.png" class="profile_pic" alt="Rahil Verma profile picture" />
+
+        </div>
+        <div class="section__text">
+          <h1 class="title">Rahil Verma</h1>
+          <p class="section__text__p2">Computer Science and Biomedical Engineering</p>
+          <p class="section__text__p2">Duke University</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/verma_resume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://linkedin.com/rahil-verma-246402208'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/rahilv99'"
+            />
+          </div>
+        </div>
+      </section>
+
+
+<!-- About section -->
+      <section id="about">
+        <h1 class="title"> 01. About Me</h1>
+        <div class="section-container">
+              <div class="about-containers">
+                <div class="text-container">
+                  <p>
+                    Hello, my name is Rahil Verma. I am a second year student at Duke University
+                    pursuing a <span class="highlight">B.S.E. in Biomedical Engineering</span> and a <span class="highlight">B.S. in Computer Science</span>.
+                    I am passionate about using new technologies such as <span class="highlight">generative AI</span> to solve problems 
+                    in healthcare and medicene. Outside of my career I enjoy hiking, backpacking, golf, and
+                    traveling.
+                  </p>
+                  <p>
+                    I am currently looking for a summer internship in <span class="highlight">software engineering</span>
+                    and related research. If you are interested in my work, please feel free to contact me.
+                  </p>
+                  <p>
+                    My work experience includes..
+                  </p>
+                  <div class="article-container">
+                    <div class="widget">
+                      <h2>HTML</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>CSS</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>JavaScript</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>Java</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>C</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>SwiftUI</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>Firebase</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>Git</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>MATLAB</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>React</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>Python</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>Solidworks</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>DLS</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>Research</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>Proteins</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>Data Processing</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>Statistics</h2>
+                    </div>
+                    <div class="widget">
+                      <h2>IOS Development</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__pic-container">
+                  <img
+                    src="./assets/duke-chapel.png"
+                    alt="Duke Chapel Picture"
+                    class="about-pic"
+                  />
+                </div>
+              </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+
+<!-- Experience section -->
+      <section id="experience">
+        <h1 class="title">02. Experience</h1>
+            <div class="experience-container">
+              <nav id="experience-nav">
+                <ul class="nav-links2">
+                    <li><a href="#experience1", onclick="showExperience(event, 'experience1')">Link</a></li>
+                    <li><a href="#experience2", onclick="showExperience(event, 'experience2')">CS201</a></li>
+                    <li><a href="#experience3", onclick="showExperience(event, 'experience3')">NIST</a></li>
+                    <li><a href="#experience4", onclick="showExperience(event, 'experience4')">Duke</a></li>
+                </ul>
+              </nav>
+
+              <div id="experience1" class="experience">
+                <p class="resume-head">Founder - Link App</p>
+                <p class="resume-date">Jan 2023 - Nov 2023</p>
+                <ul class="resume-body">
+                  <li> Designed to encourage in-person interactions, Link is a map-based <span class = "accent">ios app</span> that allows users to plan spontaneous events in the busy world of college campuses and cities with a <span class = "accent">frictionless user interface</span></li>
+                  <li> Leading a small team of developers using <span class = "accent">Xcode, Firebase, and Github</span>, sold to Glow in November 2023 </li>
+                  <li> Gained experience in working in a technical team, planning workflow, and <span class = "accent">git version control</span></li>
+                </ul>
+              </div>
+
+              <div id="experience2" class="experience">
+                <p class="resume-head">Teaching Assistant - CS201 (Data Strucutres and Algorithims)</p>
+                <p class="resume-date">Aug 2023 - Current</p>
+                <ul class="resume-body">
+                  <li>Lead a <span class = "accent">discussion section</span> aimed at exploring <span class = "accent">fundamental Java principles</span> such as <span class = "accent">runtime efficiency</span> and <span class = "accent">algorithms</span></li>
+                  <li>Answer student questions during weekly <span class = "accent">office hours</span>, brainstorm teaching methods in weekly meetings</li>
+                </ul>
+              </div>
+
+              <div class="resume-content">
+                  <div id="experience3" class="experience">
+                      <p class="resume-head">Undergraduate Research Fellow - National Institute of Standards and Technologies</p>
+                      <p class="resume-date">May 2023 - Aug 2023</p>
+                      <ul class="resume-body">
+                        <li> Conducted independently designed experiments to <span class="accent">optimize</span> the stability of protein-based <span class="accent">pharmaceutical formulations</span></li>
+                        <li>Synthesized findings for weekly written and oral reports to my team, presented at an organization-wide showcase</li>
+                      </ul>
+                  </div>
+          
+                  <div id="experience4" class="experience">
+                    <p class="resume-head">Data Proeccsing Intern - Center for Global Women's Health Technologies</p>
+                    <p class="resume-date">Aug 2022 - May 2023</p>
+                    <ul class="resume-body">
+                      <li> Utilized <span class="accent">MATLAB</span> and <span class="accent">Python</span> to colorize and sort animal luminescence images of lung metastasis <span class="accent">tumor signaling</span> </li>
+                      <li>Created a novel <span class="accent">grayscale-to-color</span> script designed to display tumor signaling, cut processing times by <span class="accent">hundreds of hours</span></li>
+                    </ul>
+                  </div>
+
+              </div>
+            </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+
+<!-- Projects section -->
+      <section id="projects">
+        <h1 class="title">03. Projects</h1>
+        <section class ="projects-container">
+          
+          <div class="project-widget">
+            <div class="article-container">
+              <img
+                src="./assets/RGB.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Grayscale to Color Image Processing</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rahilv99/GRStoRGB'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="project-widget">
+            <div class="article-container">
+              <img
+                src="./assets/Link.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Link App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rahilv99/LinkApp'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+        </section>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+<!-- Contact section -->
+      <section id="contact">
+        <h1 class="title">04. Contact Me</h1>
+        <div class="footer-container">
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:rahil.verma@duke.edu">rahil.verma@duke.edu</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/rahil-verma-246402208">LinkedIn</a></p>
+          </div>
+        </div>
+        <div class="contact-info-lower-container">
+          <p>
+            <a href="https://github.com/rahilv99/fullstack_website_portfolio">
+              Designed and developed by Rahil Verma in VScode using HTML, CSS, and JavaScript. 
+            </a>
+          </p>
+        </div>
+      </div>
+      </section>
+      <footer>
+        <nav class= "desktop-nav">
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Rahil Verma. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+  </body>
+</html>
+
