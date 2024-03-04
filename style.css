@@ -283,6 +283,7 @@ section {
 /* ABOUT SECTION */
 
 #about {
+  display: flex;
   position: relative;
   border-bottom: 2px solid #d3ebff; 
 }
@@ -441,6 +442,7 @@ section {
 
 
 #experience {
+  display: flex;
   position: relative;
   border-bottom: 2px solid #d3ebff; 
 }
@@ -484,6 +486,7 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
+  display: flex;
   position: relative;
   border-bottom: 2px solid #d3ebff; 
 }
