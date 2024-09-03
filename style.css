@@ -355,13 +355,14 @@ section {
 .nav-links2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 1rem;
   list-style: none;
   font-size: 2rem;
   margin-bottom: 2rem;
   border-left: 2px solid #d3ebff;
   margin: 2rem;
+  width: max-content;
+  align-items: flex-start; 
 }
 .nav-links2 a {
   padding: 10px 10px; /* Adjust padding as needed */
@@ -369,18 +370,30 @@ section {
   color: #a5d7ff; /* Set text color */
   background-color: transparent; /* Set background color */
   transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+  flex: 1; /* Makes each link take up equal space */
+  display: flex;
+  align-items: flex-start; /* Centers text vertically */
+  justify-content: flex-start; /* Left aligns text */
 }
 
 .nav-links2 a:hover {
   background-color: #272f2e;
   color: #d3ebff;
   border-bottom: 2px solid #d3ebff;
+  flex: 1; /* Makes each link take up equal space */
+  display: flex;
+  align-items: center; /* Centers text vertically */
+  justify-content: flex-start; /* Left aligns text */
 }
 
 .nav-links2 a.active {
   background-color: #272f2e;
   color: #d3ebff;
   border-bottom: 2px solid #d3ebff;
+  flex: 1; /* Makes each link take up equal space */
+  display: flex;
+  align-items: center; /* Centers text vertically */
+  justify-content: flex-start; /* Left aligns text */
 }
 
 
@@ -419,7 +432,7 @@ section {
   gap: 1rem;
   font-size: 1.3rem;
 }
-
+/*
 .experience-container {
   display: flex;
   gap: 1rem;
@@ -445,6 +458,67 @@ section {
   display: flex;
   position: relative;
   border-bottom: 2px solid #d3ebff; 
+}
+*/
+
+/* General Styles for Experience Container */
+.experience-container {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* Allow the container to take full width */
+  max-width: 1200px; /* Set a maximum width for larger screens */
+  padding-left: 2rem; /* Add padding for better spacing on smaller screens */
+  padding-right: 2rem;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Experience Box */
+.experience {
+  display: none;
+}
+
+.experience.active {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Make sure the active experience takes up full available width */
+}
+
+/* Experience Wrapper */
+#experience {
+  display: flex;
+  position: relative;
+  border-bottom: 2px solid #d3ebff;
+  width: 100%; /* Ensures the wrapper takes full width */
+  justify-content: center; /* Centers the content within the wrapper */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-container {
+    margin-left: 1rem; /* Reduce margin for smaller screens */
+    margin-right: 1rem;
+    padding-left: 1rem; /* Adjust padding for smaller screens */
+    padding-right: 1rem;
+  }
+
+  .experience.active {
+    align-items: center; /* Center content on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-container {
+    margin-left: 0.5rem; /* Further reduce margin on very small screens */
+    margin-right: 0.5rem;
+    padding-left: 0.5rem; /* Adjust padding accordingly */
+    padding-right: 0.5rem;
+  }
 }
 
 .details-container {
